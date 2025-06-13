@@ -14,7 +14,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100vh; /* full viewport height */
   padding: 5vw;
   opacity: 0;
   animation: fadeIn 1.2s ease-out forwards;
@@ -44,7 +44,7 @@ body {
 }
 
 .bottom {
-  width: 100%;
+  margin-top: auto; /* pushes this section to bottom */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
