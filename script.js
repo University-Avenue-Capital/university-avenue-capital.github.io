@@ -1,5 +1,5 @@
 const titleText = "University Avenue Capital";
-const taglineText = "Empowering Bay Area startup founders to shape the future.";
+const taglineText = "Have an idea worth funding? Contact us.";
 
 const titleContainer = document.getElementById("dynamicTitle");
 const taglineContainer = document.getElementById("dynamicTagline");
