@@ -1,0 +1,96 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vw;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #111;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  max-width: 90vw;
+  z-index: 2;
+  position: relative;
+  user-select: none;
+}
+
+.title span {
+  transition: color 0.15s ease-out;
+  color: #111;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1vh;
+  z-index: 2;
+  position: relative;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 60%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  user-select: none;
+}
+
+.tagline .word {
+  white-space: nowrap;
+  display: inline-flex;
+  gap: 0.02rem;
+}
+
+.tagline .word span {
+  transition: color 0.15s ease-out;
+  color: #444;
+}
+
+.icons a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.icons a:hover {
+  color: #c00;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .title { font-size: 2.2rem; }
+  .tagline { font-size: 1rem; max-width: 90%; }
+  .icons a { font-size: 1.3rem; margin-left: 15px; }
+  .bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
