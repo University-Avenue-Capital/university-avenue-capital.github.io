@@ -30,7 +30,7 @@ body {
 
 /* Title text styling */
 .title {
-  font-size: 4.2rem; /* increased from 3.2rem */
+  font-size: 1.6rem; /* increased from 3.2rem */
   font-weight: bold;
   color: #111;
   display: flex;
@@ -60,7 +60,7 @@ body {
 
 /* Description / tagline */
 .tagline {
-  font-size: 1.6rem; /* increased from 1.2rem */
+  font-size: 4.2rem; /* increased from 1.2rem */
   color: #444;
   max-width: 60%;
   margin: 0;
@@ -112,11 +112,11 @@ body {
 /* Responsive layout */
 @media (max-width: 768px) {
   .title {
-    font-size: 3rem; /* increased from 2.2rem */
+    font-size: 1.3rem; /* increased from 2.2rem */
   }
 
   .tagline {
-    font-size: 1.3rem; /* increased from 1rem */
+    font-size: 3rem; /* increased from 1rem */
     max-width: 90%;
   }
 
