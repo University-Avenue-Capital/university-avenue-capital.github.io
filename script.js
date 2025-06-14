@@ -1,5 +1,5 @@
-const titleText = "university avenue capital";
-const taglineText = "have an idea worth funding? contact us.";
+const titleText = "have an idea worth funding? contact us.";
+const taglineText = "university avenue ventures";
 
 const titleContainer = document.getElementById("dynamicTitle");
 const taglineContainer = document.getElementById("dynamicTagline");
