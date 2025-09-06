@@ -69,6 +69,14 @@ body {
   user-select: none;
 }
 
+.about-content {
+  font-size: 1rem; /* Normal font size */
+  color: #444;
+  max-width: 100%; /* Changed from 60% */
+  margin: 0;
+  overflow: auto; /* Added to clear floats */
+}
+
 .tagline .word {
   white-space: nowrap;
   display: inline-flex;
@@ -128,5 +136,19 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+}
+
+.headshot {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+@media (max-width: 768px) {
+  .headshot {
+    /* float: none; Removed to keep text flowing */
+    /* display: block; Removed as float will handle positioning */
+    margin: 0 0 20px 20px; /* Adjusted margin for smaller screens, keeping it on the right */
   }
 }
